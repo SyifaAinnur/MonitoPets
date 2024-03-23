@@ -79,12 +79,11 @@ const isOpen = ref(false);
     <!--<transition name="fade">-->
     <div v-show="isOpen">
       <AppModal :isOpen="isOpen" @close-handler="isOpen = !isOpen">
-        <h2 class="text-center text-head36b">Adopt dog</h2>
         <div class="aspect-video overflow-hidden">
           <iframe
             width="100%"
             height="315"
-            src="https://www.youtube.com/embed/YQDDm9HLkV4"
+            src="https://www.youtube.com/embed/yf_J3vKDDg8"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
