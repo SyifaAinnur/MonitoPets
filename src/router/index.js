@@ -14,15 +14,15 @@ const router = createRouter({
     },
     {
       path: "/category/:category",
-      // component: () => import("@/views/Category.vue"),
+      component: () => import("@/views/ComingSoon.vue"),
       name: "category",
       meta: {
-        layout: "CategoryPage",
+        layout: "DefaultPage",
       },
     },
     {
       path: "/category",
-      // component: () => import("@/views/AllCategory.vue"),
+      component: () => import("@/views/ComingSoon.vue"),
       name: "all-category",
       meta: {
         layout: "DefaultPage",
@@ -31,10 +31,10 @@ const router = createRouter({
     },
     {
       path: "/product/:product",
-      // component: () => import("@/views/Product.vue"),
+      component: () => import("@/views/ComingSoon.vue"),
       name: "product",
       meta: {
-        layout: "ProductPage",
+        layout: "DefaultPage",
       },
     },
     {
@@ -48,7 +48,7 @@ const router = createRouter({
     },
     {
       path: "/product",
-      // component: () => import("@/views/AllProducts.vue"),
+      component: () => import("@/views/ComingSoon.vue"),
       name: "products",
       meta: {
         layout: "DefaultPage",
@@ -57,6 +57,7 @@ const router = createRouter({
     },
     {
       path: "/partners",
+      component: () => import("@/views/ComingSoon.vue"),
       name: "partners",
       meta: {
         layout: "DefaultPage",
@@ -65,6 +66,7 @@ const router = createRouter({
     },
     {
       path: "/partners/:partner",
+      component: () => import("@/views/ComingSoon.vue"),
       name: "partner",
       meta: {
         layout: "DefaultPage",

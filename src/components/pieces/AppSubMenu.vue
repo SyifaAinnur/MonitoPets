@@ -1,5 +1,4 @@
 <script setup>
-import banner from "~/images/menu-image.png";
 import rightIcon from "~/icons/right.svg";
 import { useCategoryStore } from "@/stores/category";
 import { storeToRefs } from "pinia";
@@ -49,7 +48,5 @@ const { categories } = storeToRefs(categoryStore);
         </li>
       </template>
     </ul>
-
-    <span><img :src="banner" alt="banner" /></span>
   </div>
 </template>
