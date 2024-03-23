@@ -55,6 +55,21 @@ const router = createRouter({
         title: "All Products",
       },
     },
+    {
+      path: "/partners",
+      name: "partners",
+      meta: {
+        layout: "DefaultPage",
+        title: "Partners",
+      },
+    },
+    {
+      path: "/partners/:partner",
+      name: "partner",
+      meta: {
+        layout: "DefaultPage",
+      },
+    },
     // {
     //   path: '/about',
     //   name: 'about',

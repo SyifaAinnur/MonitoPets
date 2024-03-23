@@ -1,6 +1,6 @@
 <script setup>
 import AppButton from "@/components/ui/AppButton.vue";
-// import { usePartnersStore } from "@/stores/partners";
+import { usePartnersStore } from "@/stores/partners";
 import { useProductStore } from "@/stores/products";
 import right2 from "~/icons/right-2.svg";
 import playIcon from "~/icons/play-icon.svg";
@@ -13,10 +13,10 @@ import AppModal from "@/components/ui/AppModal.vue";
 import { ref } from "vue";
 import { storeToRefs } from "pinia";
 
-// const partnersStore = usePartnersStore();
+const partnersStore = usePartnersStore();
 const productStore = useProductStore();
 const { exchangeRateProducts } = storeToRefs(productStore);
-// const { partners } = partnersStore;
+const { partners } = partnersStore;
 const isOpen = ref(false);
 </script>
 
