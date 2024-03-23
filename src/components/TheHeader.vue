@@ -15,8 +15,8 @@ import up from "~/icons/up.svg";
 import { useCategoryStore } from "@/stores/category";
 import { useRouter } from "vue-router";
 import { Form as VeeForm } from "vee-validate";
-// import AppCurrencySwitcher from "@/components/pieces/AppCurrencySwitcher.vue";
-// vars
+import AppCurrencySwitcher from "@/components/pieces/AppCurrencySwitcher.vue";
+
 const menuIsVisible = ref(false);
 const searchIsVisible = ref(false);
 const isOpen = ref(false);
