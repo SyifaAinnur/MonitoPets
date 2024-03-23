@@ -7,11 +7,11 @@ import searchIconDark from "~/icons/search-dark.svg";
 import searchIcon from "~/icons/search.svg";
 import AppInput from "@/components/ui/AppInput.vue";
 import AppAccordion from "@/components/ui/AppAccordion.vue";
-// import { menuItems } from "@/api/mock/menu";
+import { menuItems } from "@/api/mock/menu";
 import AppButton from "@/components/ui/AppButton.vue";
 import down from "~/icons/down.svg";
 import up from "~/icons/up.svg";
-// import AppSubMenu from "@/components/pieces/AppSubMenu.vue";
+import AppSubMenu from "@/components/pieces/AppSubMenu.vue";
 import { useCategoryStore } from "@/stores/category";
 import { useRouter } from "vue-router";
 import { Form as VeeForm } from "vee-validate";
@@ -111,7 +111,7 @@ const clickOutsideMainMenu = () => {
                   v-show="subMenu"
                   class="absolute bottom-[10px] left-0 z-50 w-full"
                 >
-                  <!-- <AppSubMenu @close-menu="subMenu = !subMenu" /> -->
+                  <AppSubMenu @close-menu="subMenu = !subMenu" />
                 </div>
               </transition>
             </ul>

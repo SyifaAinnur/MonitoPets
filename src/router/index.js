@@ -12,6 +12,23 @@ const router = createRouter({
         title: "Home",
       },
     },
+    {
+      path: "/category/:category",
+      // component: () => import("@/views/Category.vue"),
+      name: "category",
+      meta: {
+        layout: "CategoryPage",
+      },
+    },
+    {
+      path: "/category",
+      // component: () => import("@/views/AllCategory.vue"),
+      name: "all-category",
+      meta: {
+        layout: "DefaultPage",
+        title: "Category",
+      },
+    },
     // {
     //   path: '/about',
     //   name: 'about',
