@@ -1,6 +1,6 @@
 <script setup>
 import Header from "@/components/TheHeader.vue";
-// import Footer from "@/components/TheFooter.vue";
+import Footer from "@/components/TheFooter.vue";
 import mobileImage from "~/images/mobile-image.png";
 import desktopImage from "~/images/banner-image.png";
 import playIcon from "~/icons/play-icon.svg";
