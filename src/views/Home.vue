@@ -1,22 +1,22 @@
 <script setup>
 import AppButton from "@/components/ui/AppButton.vue";
 // import { usePartnersStore } from "@/stores/partners";
-// import { useProductStore } from "@/stores/products";
+import { useProductStore } from "@/stores/products";
 import right2 from "~/icons/right-2.svg";
 import playIcon from "~/icons/play-icon.svg";
 import pawIcon from "~/icons/paw.svg";
 import handImage from "~/images/hand.png";
-// import AppProductsGrid from "@/components/pieces/AppProductsGrid.vue";
+import AppProductsGrid from "@/components/pieces/AppProductsGrid.vue";
 import bannerImage from "~/images/banner-image-2.png";
 // import AppArticleGrid from "@/components/pieces/AppArticleGrid.vue";
-// import AppModal from "@/components/ui/AppModal.vue";
+import AppModal from "@/components/ui/AppModal.vue";
 import { ref } from "vue";
 import { storeToRefs } from "pinia";
 
-const partnersStore = usePartnersStore();
+// const partnersStore = usePartnersStore();
 const productStore = useProductStore();
 const { exchangeRateProducts } = storeToRefs(productStore);
-const { partners } = partnersStore;
+// const { partners } = partnersStore;
 const isOpen = ref(false);
 </script>
 
@@ -198,7 +198,7 @@ const isOpen = ref(false);
           </AppButton>
         </router-link>
       </div>
-      <AppArticleGrid :first="0" :last="3" />
+      <!-- <AppArticleGrid :first="0" :last="3" /> -->
     </section>
   </main>
   <teleport to="body">

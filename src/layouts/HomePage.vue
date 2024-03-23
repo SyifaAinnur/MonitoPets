@@ -6,7 +6,7 @@ import desktopImage from "~/images/banner-image.png";
 import playIcon from "~/icons/play-icon.svg";
 import AppButton from "@/components/ui/AppButton.vue";
 import { ref } from "vue";
-// import AppModal from "@/components/ui/AppModal.vue";
+import AppModal from "@/components/ui/AppModal.vue";
 
 const isOpen = ref(false);
 </script>
@@ -74,7 +74,7 @@ const isOpen = ref(false);
     </div>
   </header>
   <slot />
-  <!-- <Footer /> -->
+  <Footer />
   <teleport to="body">
     <!--<transition name="fade">-->
     <div v-show="isOpen">

@@ -29,6 +29,32 @@ const router = createRouter({
         title: "Category",
       },
     },
+    {
+      path: "/product/:product",
+      // component: () => import("@/views/Product.vue"),
+      name: "product",
+      meta: {
+        layout: "ProductPage",
+      },
+    },
+    {
+      path: "/search",
+      component: () => import("@/views/Search.vue"),
+      name: "search",
+      meta: {
+        layout: "DefaultPage",
+        title: "Search",
+      },
+    },
+    {
+      path: "/product",
+      // component: () => import("@/views/AllProducts.vue"),
+      name: "products",
+      meta: {
+        layout: "DefaultPage",
+        title: "All Products",
+      },
+    },
     // {
     //   path: '/about',
     //   name: 'about',
