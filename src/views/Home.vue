@@ -8,7 +8,7 @@ import pawIcon from "~/icons/paw.svg";
 import handImage from "~/images/hand.png";
 import AppProductsGrid from "@/components/pieces/AppProductsGrid.vue";
 import bannerImage from "~/images/banner-image-2.png";
-// import AppArticleGrid from "@/components/pieces/AppArticleGrid.vue";
+import AppArticleGrid from "@/components/pieces/AppArticleGrid.vue";
 import AppModal from "@/components/ui/AppModal.vue";
 import { ref } from "vue";
 import { storeToRefs } from "pinia";
@@ -198,7 +198,7 @@ const isOpen = ref(false);
           </AppButton>
         </router-link>
       </div>
-      <!-- <AppArticleGrid :first="0" :last="3" /> -->
+      <AppArticleGrid :first="0" :last="3" />
     </section>
   </main>
   <teleport to="body">

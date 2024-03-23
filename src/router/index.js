@@ -72,6 +72,23 @@ const router = createRouter({
         layout: "DefaultPage",
       },
     },
+    {
+      path: "/articles",
+      component: () => import("@/views/ComingSoon.vue"),
+      name: "articles",
+      meta: {
+        layout: "DefaultPage",
+        title: "All Articles",
+      },
+    },
+    {
+      path: "/articles/:article",
+      component: () => import("@/views/ComingSoon.vue"),
+      name: "article",
+      meta: {
+        layout: "DefaultPage",
+      },
+    },
     // {
     //   path: '/about',
     //   name: 'about',
